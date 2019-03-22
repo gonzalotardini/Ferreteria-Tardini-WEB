@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ferreteria Tardini Hnos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <style>
+    #simon {
+      color: aqua;
+    }
+
+    a.nav-link {
+      color: white;
+      font-size: 20px;
+      text-shadow: 2px 2px 9px rgb(10, 10, 10);
+    }
+
+    .nav-link:hover {
+      font-weight: bold;
+    }
+
+    #linkScrolled:hover {
+      font-weight: bold !important;
+      color: white !important;
+    }
+
+    #linkNormal:hover {
+      font-size: 22px;
+
+    }
+
+    .bg-light {
+      transition: 1200ms;
+      background: transparent !important;
+    }
+
+    .bg-light.scrolled {
+      background: #dc3546dc !important;
+      border-color: #dc3545;
+    }
+
+
+    .Hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/tools2.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #tittle {
+      font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: 80px;
+      color: white;
+      margin-top: 200px;
+      text-shadow: 2px 2px 9px rgb(10, 10, 10);
+    }
+
+    #subtittle {
+      font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 20%;
+      text-shadow: 2px 2px 9px rgb(10, 10, 10);
+    }
+
+    footer {
+      background: #292929;
+      color: #EAEAEA;
+
+
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0
+    }
+
+    span {
+      margin-right: 2%;
+    }
+
+    .jumbotron {
+      background-color: white;
+    }
+
+
+    #ubicacionText {
+      color: white;
+      text-shadow: 2px 2px 9px rgb(10, 10, 10);
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+
+    .carousel-inner .carousel-item-right,
+    .carousel-inner .carousel-item-left {
+      transform: translateX(0);
+
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler {
+      border: solid;
+      border-color: white;
+    }
+
+
+    .datosDireccion {
+      color: #ffffff;
+      background-color: #ce0606;
+
+    }
+
+    .contenidoDireccion {
+      margin-bottom: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .datosDireccion h5 {
+      font-weight: 300;
+    }
+
+    #content-mobile {
+      display: none;
+    }
+
+    .carousel-inner img {
+      margin: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      #tittle {
+        font-size: 60px;
+      }
+
+      #subtittle {
+        font-size: 30px;
+      }
+
+      .bg-light {
+        background: #212529 !important;
+      }
+
+      #content-desktop {
+        display: none;
+      }
+
+      #content-mobile {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="Home" class="Hero">
+    <nav id="navigation" class="navbar  navbar-expand-sm bg-light  fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link active" href="#Home">Home</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link" href="#productos">Nuestros Productos</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link" href="#clientes">Nuestros Clientes</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link" href="#sectionUbicacion">Ubicación</a>
+          </li>
+          <li class="nav-item text-center">
+            <a id="linkNormal" class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <br />
+
+    <div class="text-center">
+      <h1 id="tittle">FERRETERIA TARDINI HNOS</h1>
+      <h3 id="subtittle">Desde 1994 al servicio de la gente</h3>>
+    </div>
+  </div>
+
+  <!-- <div class="jumbotron text-center">
+          <h1 id="simon">My First Bootstrap Page</h1>
+          <p>Resize this responsive page to see the effect!</p>
+        </div> -->
+
+  <br>
+  <div id="sobreNosotros" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Sobre Nosotros</h1>
+          <br>
+          <h5>Somo <b>Ferreteria Tardini Hnos.</b> una empresa que brinda sus servicios desde 1994 ofreciendo productos
+            de <b>ferreteria, pinturería, sanitarios, herrajes, bulonería, electricidad y bazar</b> . Brindamos
+            asesoramiento técnico de todos los productos que tenemos a la venta, ofreciendo siempre la mejor solución a
+            un bajo costo. Nuestro principal valor se apoya en el interés por el problema o necesidad del cliente y en
+            el conocimiento técnico para resolverlo.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div id="productos" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Nuestro Productos</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-mobile">
+    <div id="carouselExampleControls" class="carousel slide text-center" data-ride="carousel" data-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/Marcas/bahco.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/venier.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/bremen.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/alba.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/wd80.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/fortex.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/kalop.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/tigre.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/fisher.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/Marcas/bulit.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="content-desktop">
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner w-100" role="listbox" >
+            <div class="carousel-item active">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/bahco.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/venier.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/bremen.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/alba.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/wd80.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/fortex.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/kalop.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/tigre.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/fisher.jpg">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block col-3 img-fluid" src="img/Marcas/bulit.jpg">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <br />
+  <div id="clientes" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Nuestro Clientes</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div id="sectionUbicacion">
+    <div class="text-center">
+      <h1>Ubicación</h1>
+      <br>
+    </div>
+    <div class="col-md-12">
+
+
+      <br>
+      <br>
+      <div class="row" id="content-desktop">
+        <div style="padding:0px;" class="col-md-8 text-center">
+          <div class="mapouter">
+            <div><iframe width="100%" height="450"
+                src="https://maps.google.com/maps?q=ferreteria%20tardini&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center datosDireccion">
+          <div>
+            <br>
+            <h5>Gral. Gervasio Artigas 3985, Agronomía, Capital Federal.</h5>
+            <br>
+            <div class="contenidoDireccion">
+              <h5>Horarios de Atención:<br> Lunes a Viernes de 8 a 12:30hs y 14:30 a 19:30hs</h5>
+              <h5>Sábados 8 a 14hs</h5>
+              <br>
+            </div>
+            <div class="contenidoDireccion">
+              <h5>Ferreteriatardini@gmail.com</h5>
+              <br>
+            </div>
+            <div class="contenidoDireccion">
+              <h5><span class="fas fa-phone fa-rotate-90"></span>011-4573-1263</h5>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-mobile">
+        <div class="col-md-8 text-center">
+          <div class="mapouter">
+            <div><iframe width="100%" height="300"
+                src="https://maps.google.com/maps?q=ferreteria%20tardini&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 text-center datosDireccion">
+          <br>
+          <h5>Gral. Gervasio Artigas 3985, Agronomía, Capital Federal.</h5>
+          <br>
+          <div class="contenidoDireccion">
+            <h5>Horarios de Atención:<br> Lunes a Viernes de 8 a 12:30hs y 14:30 a 19:30hs</h5>
+            <h5>Sábados 8 a 14hs</h5>
+          </div>
+          <div class="contenidoDireccion">
+            <h5>Ferreteriatardini@gmail.com</h5>
+          </div>
+          <div class="contenidoDireccion">
+            <h5><span class="fas fa-phone fa-rotate-90"></span></h5>011-4573-1263</h5>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+    </div>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron text-center">
+            <h1>Contacto</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 pb-5">
+
+          <!--Form with header-->
+
+          <form action="mail.php" method="post">
+            <div class="card border-primary rounded-0">
+              <div class="card-header p-0">
+                <div class="bg-info text-white text-center py-2">
+                  <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                  <p class="m-0">Con gusto te ayudaremos</p>
+                </div>
+              </div>
+              <div class="card-body p-3">
+
+                <!--Body-->
+                <div class="form-group">
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                    </div>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido"
+                      required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                    </div>
+                    <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com"
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                    </div>
+                    <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                </div>
+              </div>
+
+            </div>
+          </form>
+          <!--Form with header-->
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-md-4 text-center">
+          </div>
+          <div class="col-md-4 text-center">
+            <h4>Ubicación</h4>
+            <ul>
+              <li><span class="fas fa-map-marker-alt"></span>Gral. Gervasio Artigas 3985 </li>
+              <li>Agronomía, Capital Federal</li>
+            </ul>
+          </div>
+          <div id="contacto" class="col-md-4 text-center">
+            <h4>Contacto</h4>
+            <ul>
+              <li><span class="fas fa-phone fa-rotate-90"></span>(011) 4573-1263</li>
+              <li><span class="fas fa-envelope"></span>ferreteriatardini@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+      </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script>
+      if ($(window).width() >= 768) {
+        $(window).scroll(function () {
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 610);
+
+          if ($(this).scrollTop() > 610) {
+            $('#linkNormal').attr('id', 'linkScrolled', $(this).scrollTop() > 610);
+          } else {
+            $('#linkScrolled').attr('id', 'linkNormal', $(this).scrollTop() > 610);
+          }
+
+        });
+      }
+
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $(".nav-link").on('click', function (event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
+    <!-- carrousel -->
+    <script>
+
+      if ($(window).width() >= 768) {
+        $('#recipeCarousel').carousel({
+          interval: 800
+        })
+
+        $('.carousel .carousel-item').each(function () {
+          var next = $(this).next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i = 0; i < 2; i++) {
+            next = next.next();
+            if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+          }
+        });
+
+      }
+
+    </script>
+</body>
+
+</html>
