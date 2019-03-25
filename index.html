@@ -155,9 +155,17 @@
       margin: auto;
     }
 
+    .jumbotron h1{
+      color: #0768bd;
+      border: solid;
+      border-radius: 10px;
+    }
+
+    /* Estilos para mobile */
     @media screen and (max-width: 768px) {
       #tittle {
         font-size: 60px;
+        margin-top: 100px;
       }
 
       #subtittle {
@@ -201,9 +209,6 @@
             <a id="linkNormal" class="nav-link" href="#productos">Nuestros Productos</a>
           </li>
           <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#clientes">Nuestros Clientes</a>
-          </li>
-          <li class="nav-item text-center">
             <a id="linkNormal" class="nav-link" href="#sectionUbicacion">Ubicación</a>
           </li>
           <li class="nav-item text-center">
@@ -234,6 +239,8 @@
         <div class="jumbotron text-center">
           <h1>Sobre Nosotros</h1>
           <br>
+          <br>
+          <br>
           <h5>Somos <b>Ferreteria Tardini Hnos.</b> una empresa que brinda sus servicios desde 1994 ofreciendo productos
             de <b>ferreteria, pinturería, sanitarios, herrajes, bulonería, electricidad y bazar</b> . Brindamos
             asesoramiento técnico de todos los productos que tenemos a la venta, ofreciendo siempre la mejor solución a
@@ -244,7 +251,6 @@
     </div>
   </div>
 
-  <br>
   <div id="productos" class="container">
     <div class="row">
       <div class="col-md-12">
@@ -304,7 +310,7 @@
     <div class="container text-center my-3">
       <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-          <div class="carousel-inner w-100" role="listbox" >
+          <div class="carousel-inner w-100" role="listbox">
             <div class="carousel-item active">
               <img class="d-block col-3 img-fluid" src="img/Marcas/bahco.jpg">
             </div>
@@ -350,7 +356,16 @@
     </div>
   </div>
   <br />
-  <div id="clientes" class="container">
+  <div class="text-center">
+    <a target="_blank" href="https://listado.mercadolibre.com.ar/_CustId_83739677">
+      <img alt="MercadoLibre" src="img/mercadolibre.jpg">
+      <h5>Visita nuestros productos!</h5>
+    </a>
+
+
+  </div>
+  <br>
+  <!-- <div id="clientes" class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="jumbotron text-center">
@@ -358,17 +373,17 @@
         </div>
       </div>
     </div>
-  </div>
-
+  </div> -->
+  <br>
+  <br>
+  <br>
   <br>
   <div id="sectionUbicacion">
-    <div class="text-center">
+    <div class="container jumbotron text-center">
       <h1>Ubicación</h1>
       <br>
     </div>
     <div class="col-md-12">
-
-
       <br>
       <br>
       <div class="row" id="content-desktop">
@@ -437,27 +452,30 @@
     </div>
 
     <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="jumbotron text-center">
-            <h1>Contacto</h1>
+            <h1 id="contacto">Contacto</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" >
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6 pb-5">
 
           <!--Form with header-->
 
-          <form action="mail.php" method="post">
+          <form method="POST" action="https://formspree.io/ferreteriatardini@gmail.com">
             <div class="card border-primary rounded-0">
               <div class="card-header p-0">
                 <div class="bg-info text-white text-center py-2">
-                  <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                  <!-- <h3><i class="fa fa-envelope"></i> Contactanos</h3> -->
                   <p class="m-0">Con gusto te ayudaremos</p>
                 </div>
               </div>
@@ -469,7 +487,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                     </div>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido"
+                    <input type="text" class="form-control"  name="message" placeholder="Nombre y Apellido"
                       required>
                   </div>
                 </div>
@@ -504,7 +522,7 @@
 
         </div>
       </div>
-    </div> 
+    </div>
 
 
     <br>
