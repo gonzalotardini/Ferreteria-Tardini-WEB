@@ -6,7 +6,10 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="x5gcCNJiSN8Tj3nfRNQgiOsiWZ8JeLT0-u17-KbGoK0" />
   <!-- Bootstrap CSS -->
+  <link rel="preload" as="image" href="img/tools2.jpeg">
+  <link rel="icon" href="img/icono.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
@@ -47,8 +50,8 @@
     }
 
 
-    .Hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/tools2.jpeg");
+    #Home {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tools2.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -155,7 +158,7 @@
       margin: auto;
     }
 
-    .jumbotron h1{
+    .jumbotron h1 {
       color: #0768bd;
       border: solid;
       border-radius: 10px;
@@ -186,11 +189,12 @@
     }
   </style>
 
+
 </head>
 
 <body>
 
-  <div id="Home" class="Hero">
+  <div id="Home">
     <nav id="navigation" class="navbar  navbar-expand-sm bg-light  fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -212,7 +216,7 @@
             <a id="linkNormal" class="nav-link" href="#sectionUbicacion">Ubicación</a>
           </li>
           <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#contacto">Contacto</a>
+            <a id="linkNormal" class="nav-link" href="#Contacto">Contacto</a>
           </li>
         </ul>
 
@@ -225,6 +229,7 @@
       <h1 id="tittle">FERRETERIA TARDINI HNOS</h1>
       <h3 id="subtittle">Desde 1994 al servicio de la gente</h3>>
     </div>
+
   </div>
 
   <!-- <div class="jumbotron text-center">
@@ -455,23 +460,31 @@
     <br>
     <br>
     <br>
-    <div class="container">
+    <div id="Contacto" class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="jumbotron text-center">
-            <h1 id="contacto">Contacto</h1>
+            <h1>Contacto</h1>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container" >
+    <div class="container alert alert-success text-center" id="success" style="display:none;" role="alert">
+      <p style="font-weight:bold">Su consulta se ha enviado correctamente, nos pondremos en contacto a la brevedad!</p>
+    </div>
+
+    <div class="container alert alert-danger text-center" id="error" style="display:none;" role="alert">
+      <p style="font-weight:bold" id="ErrorDesc"></p>
+    </div>
+
+    <div id="esconder" style="display:block;" class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6 pb-5">
 
           <!--Form with header-->
 
-          <form method="POST" action="https://formspree.io/ferreteriatardini@gmail.com">
+          <form>
             <div class="card border-primary rounded-0">
               <div class="card-header p-0">
                 <div class="bg-info text-white text-center py-2">
@@ -487,7 +500,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                     </div>
-                    <input type="text" class="form-control"  name="message" placeholder="Nombre y Apellido"
+                    <input type="text" id="nombre" class="form-control" name="message" placeholder="Nombre y Apellido"
                       required>
                   </div>
                 </div>
@@ -496,7 +509,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com"
+                    <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com"
                       required>
                   </div>
                 </div>
@@ -506,12 +519,12 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                     </div>
-                    <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                    <textarea id="mensaje" class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
                   </div>
                 </div>
 
                 <div class="text-center">
-                  <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                  <input onclick="SendEmail();" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
                 </div>
               </div>
 
@@ -522,8 +535,7 @@
 
         </div>
       </div>
-    </div>
-
+    </div>   
 
     <br>
     <br>
@@ -544,7 +556,7 @@
               <li>Agronomía, Capital Federal</li>
             </ul>
           </div>
-          <div id="contacto" class="col-md-4 text-center">
+          <div class="col-md-4 text-center">
             <h4>Contacto</h4>
             <ul>
               <li><span class="fas fa-phone fa-rotate-90"></span>(011) 4573-1263</li>
@@ -612,6 +624,100 @@
         });
       });
     </script>
+
+    <script>
+
+      function SendEmail() {
+        var error = document.getElementById("error");
+        error.style.display = "none";
+        var success = document.getElementById("success");
+        success.style.display = "none";
+        var nombre = $("[id$='nombre']").val();
+        var email = $("[id$='email']").val();
+        var msje = $("[id$='mensaje']").val();
+        // var contacto=document.getElementById("esconder");
+        // var exito=document.getElementById("mailEnviado");
+
+        // if (contacto.style.display==='block') 
+        // {
+        //     contacto.style.display="none";
+        //     exito.style.display="block";
+        // }
+        // else{s
+        //   contacto.style.display="block";
+        //   exito.style.display="none";
+        // }
+
+        var result = ValidateFields(nombre, email, msje);
+
+        if (result === "true") {
+          var success = document.getElementById("success");
+          success.style.display = "block";
+          document.getElementById('nombre').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('mensaje').value = '';
+        }
+        else {         
+          $("#ErrorDesc").text(result);
+          var error = document.getElementById("error");
+          error.style.display = "block";
+        }
+
+        if (1 === 0) {
+
+          $.ajax({
+            url: 'http://localhost:54705/api/Values/SendEmail/atardini@gmail.com/prueba',
+            type: "POST", /* or type:"GET" or type:"PUT" */
+            success: function (result) {
+              console.log(result);
+            },
+            error: function (result) {
+              console.log(result);
+            }
+          });
+        }
+
+
+
+        // $.ajax({
+        //   url: 'http://localhost:54705/api/Values/gonzalotardini@gmail.com/precio del producto',         
+        //   success: function () {
+        //     console.log("Email ok");
+        //   },
+        //   error: function (e) {
+        //     console.log(e.error);
+        //   }
+        // });
+      }
+      function ValidateFields(nombre, email, msje) {
+        //Validación Nombre
+
+        if (nombre.trim() === "") {
+          return ("Error, revise el nombre ingresado");
+        }
+
+
+        //Validación Email
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        //return re.test(email);
+
+        if (!re.test(email)) {
+          return ("Error, revise el email ingresado");
+        }
+
+        //Validación msje
+        if (msje.trim() === "") {
+          return ("Error, revise el mensaje ingresado");
+        }
+
+        return ("true");
+
+      }
+
+
+
+    </script>
+
 
     <!-- carrousel -->
     <script>
