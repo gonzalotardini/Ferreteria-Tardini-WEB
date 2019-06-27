@@ -1,319 +1,245 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136783924-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136783924-2');
+</script>
+
   <title>Ferreteria Tardini Hnos</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
   <meta name="google-site-verification" content="x5gcCNJiSN8Tj3nfRNQgiOsiWZ8JeLT0-u17-KbGoK0" />
-  <!-- fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS --> 
   <link rel="preload" as="image" href="img/tools2.jpeg">
   <link rel="icon" href="img/icono.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
     integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <style>
-    a.nav-link {
-      color: white;
-      font-size: 20px;
-      text-shadow: 2px 2px 9px rgb(10, 10, 10);
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-    }
-
-    .nav-link:hover {
-      font-weight: bold;
-      font-size: 22px;
-    }
-
-    #navigation {
-      min-height: 70px;
-    }
-
-    #linkScrolled {
-      color: #E98074 !important;
-      text-shadow: none;
-    }
-
-    #linkScrolled:hover {
-      font-weight: bold !important;
-    }
-
-    #linkNormal:hover {
-      font-size: 22px;
-
-    }
-
-    .bg-light {
-      transition: 1200ms;
-      background: transparent !important;
-    }
-
-    .bg-light.scrolled {
-      background: white !important;
-      border-color: #E98074 !important;
-      border-bottom: solid;
-      border-width: 1px;
-      box-shadow: 0 1px 5px -2px rgba(42, 42, 42, .4);
-    }
-
-
-    #Home {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tools2.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    #tittle {
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-      font-size: 100px;
-      color: white;
-      margin-top: 200px;
-      text-shadow: 2px 2px 9px rgb(10, 10, 10);
-    }
-
-    #subtittle {
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-      font-size: 50px;
-      color: white;
-      margin-top: 50px;
-      margin-bottom: 20%;
-      text-shadow: 2px 2px 9px rgb(10, 10, 10);
-    }
-
-    #sobreNosotros {
-      background: #BC4639;
-      color: white;
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    #sobreNosotros h1 {     
-      font-weight: bold;
-      margin-top: 4%;
-    }
-    #sobreNosotros h4 { 
-      font-weight: bold;
-      margin: 20px;
-    }
-    #sobreNosotros p {
-      font-family: 'Montserrat', 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    #section2 {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/toolsBox.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      min-height: 500px;
-    }
-    #productos{
-      color: #BC4639;    
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
-    }
-    #productos h1{
-      font-weight: 900;
-      margin-top: 4%; 
-    }
-    #section3 {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/tools3.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      min-height: 500px;
-    }
-    #mlLink{
-      color: #BC4639;
-      font-family: 'Montserrat', 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-    }
-    footer {
-      background: #292929;
-      color: #EAEAEA;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0
-    }
-
-    span {
-      margin-right: 2%;
-    }
-
-    .jumbotron {
-      background-color: white;
-    }
-
-    #section4 {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/contact.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      min-height: 500px;
-    }
-
-    #Contacto {
-      background: #292929;
-    }
-    #Contacto h1 {
-      margin: 6%;
-      color: white;
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bold;
-    }
-
-    #ubicacionText {
-      color: white;
-      text-shadow: 2px 2px 9px rgb(10, 10, 10);
-    }
-
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-      display: flex;
-    }
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-
-    .carousel-inner .carousel-item-right,
-    .carousel-inner .carousel-item-left {
-      transform: translateX(0);
-
-    }
-
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-
-    .navbar-toggler {
-      border: solid;
-      border-color: white;
-    }
-
-
-    .datosDireccion {
-      color: #ffffff;
-      background-color: #BC4639;
-      font-family: 'Montserrat','Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 16px;
-      font-weight: normal;
-    }
-    #sectionUbicacion{
-      background: #BC4639;
-    }
-    #sectionUbicacion h1{
-      font-family: 'Rajdhani', 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      margin-top: 4%;
-      font-weight: bold;
-    }
-    .contenidoDireccion {
-      margin-bottom: 15px;
-      padding-top: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .datosDireccion h5 {
-      font-weight: 300;
-    }
-
-    #content-mobile {
-      display: none;
-    }
-
-    .carousel-inner img {
-      margin: auto;
-    }
-
-    .jumbotron h1 {
-      color: #0768bd;
-      border: solid;
-      border-radius: 10px;
-    }
-
-    /* Estilos para mobile */
-    @media screen and (max-width: 768px) {
-      #tittle {
-        font-size: 60px;
-        margin-top: 100px;
-      }
-
-      #subtittle {
-        font-size: 30px;
-      }
-
-      .bg-light {
-        background: #212529 !important;
-      }
-
-      #content-desktop {
-        display: none;
-      }
-
-      #content-mobile {
-        display: block;
-      }
-    }
-  </style>
-
+    <style>
+        #simon {
+          color: aqua;
+        }
+    
+        a.nav-link {
+          color: white;
+          font-size: 20px;
+          text-shadow: 2px 2px 9px rgb(10, 10, 10);
+        }
+    
+        .nav-link:hover {
+          font-weight: bold;
+        }
+    
+        #linkScrolled:hover {
+          font-weight: bold !important;
+          color: white !important;
+        }
+    
+        #linkNormal:hover {
+          font-size: 22px;
+    
+        }
+    
+        .bg-light {
+          transition: 1200ms;
+          background: transparent !important;
+        }
+    
+        .bg-light.scrolled {
+          background: #dc3546dc !important;
+          border-color: #dc3545;
+        }
+    
+    
+        #Home {
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(img/tools2.jpeg);      
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        #tittle {
+          font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: bold;
+          font-size: 80px;
+          color: white;
+          margin-top: 200px;
+          text-shadow: 2px 2px 9px rgb(10, 10, 10);
+        }
+    
+        #subtittle {
+          font-family: 'Century Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: bold;
+          font-size: 40px;
+          color: white;
+          margin-top: 50px;
+          margin-bottom: 20%;
+          text-shadow: 2px 2px 9px rgb(10, 10, 10);
+        }
+    
+        footer {
+          background: #292929;
+          color: #EAEAEA;
+    
+    
+        }
+    
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0
+        }
+    
+        span {
+          margin-right: 2%;
+        }
+    
+        .jumbotron {
+          background-color: white;
+        }
+    
+    
+        #ubicacionText {
+          color: white;
+          text-shadow: 2px 2px 9px rgb(10, 10, 10);
+        }
+    
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          display: flex;
+        }
+    
+        .carousel-inner .carousel-item-right.active,
+        .carousel-inner .carousel-item-next {
+          transform: translateX(25%);
+        }
+    
+        .carousel-inner .carousel-item-left.active,
+        .carousel-inner .carousel-item-prev {
+          transform: translateX(-25%);
+        }
+    
+        .carousel-inner .carousel-item-right,
+        .carousel-inner .carousel-item-left {
+          transform: translateX(0);
+    
+        }
+    
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    
+        .navbar-toggler {
+          border: solid;
+          border-color: white;
+        }
+    
+    
+        .datosDireccion {
+          color: #ffffff;
+          background-color: #ce0606;
+    
+        }
+    
+        .contenidoDireccion {
+          margin-bottom: 15px;
+          padding-top: 15px;
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    
+        .datosDireccion h5 {
+          font-weight: 300;
+        }
+    
+        #content-mobile {
+          display: none;
+        }
+    
+        .carousel-inner img {
+          margin: auto;
+        }
+    
+        .jumbotron h1 {
+          color: #0768bd;
+          border: solid;
+          border-radius: 10px;
+        }
+    
+        /* Estilos para mobile */
+        @media screen and (max-width: 768px) {
+          #tittle {
+            font-size: 60px;
+            margin-top: 100px;
+          }
+    
+          #subtittle {
+            font-size: 30px;
+          }
+    
+          .bg-light {
+            background: #212529 !important;
+          }
+    
+          #content-desktop {
+            display: none;
+          }
+    
+          #content-mobile {
+            display: block;
+          }
+        }
+      </style>
+  
 
 </head>
 
 <body>
 
-  <div id="Home">
-    <nav id="navigation" class="navbar  navbar-expand-sm bg-light  fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div id="Home">    
+      <nav id="navigation" class="navbar  navbar-expand-sm bg-light  fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link active" href="#Home">Home</a>
-          </li>
-          <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
-          </li>
-          <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#productos">Nuestros Productos</a>
-          </li>
-          <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#sectionUbicacion">Ubicación</a>
-          </li>
-          <li class="nav-item text-center">
-            <a id="linkNormal" class="nav-link" href="#Contacto">Contacto</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item text-center">
+              <a id="linkNormal" class="nav-link active" href="#Home">Home</a>
+            </li>
+            <li class="nav-item text-center">
+              <a id="linkNormal" class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item text-center">
+              <a id="linkNormal" class="nav-link" href="#productos">Nuestros Productos</a>
+            </li>
+            <li class="nav-item text-center">
+              <a id="linkNormal" class="nav-link" href="#sectionUbicacion">Ubicación</a>
+            </li>
+            <li class="nav-item text-center">
+              <a id="linkNormal" class="nav-link" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
 
+        </div>
+      </nav>
+
+      <br />
+
+      <div class="text-center">
+        <h1 id="tittle">FERRETERIA TARDINI HNOS</h1>
+        <h3 id="subtittle">Desde 1994 al servicio de la gente</h3>>
       </div>
-    </nav>
-
-    <br />
-
-    <div class="text-center">
-      <h1 id="tittle">FERRETERIA TARDINI HNOS</h1>
-      <h3 id="subtittle">Desde 1994 al servicio de la gente</h3>>
-    </div>
-
+   
   </div>
 
   <!-- <div class="jumbotron text-center">
@@ -321,59 +247,30 @@
           <p>Resize this responsive page to see the effect!</p>
         </div> -->
 
-  <div id="sobreNosotros">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="text-center">
-            <h1>SOBRE NOSOTROS</h1>
-            <br>
-            <br>
-            <br>
-            <p>Somos <b>Ferreteria Tardini Hnos.</b> una empresa que brinda sus servicios desde 1994 ofreciendo
-              productos
-              de <b>ferreteria, pinturería, sanitarios, herrajes, bulonería, electricidad y bazar</b> . Brindamos
-              asesoramiento técnico de todos los productos que tenemos a la venta, ofreciendo siempre la mejor solución
-              a
-              un bajo costo. Nuestro principal valor se apoya en el interés por el problema o necesidad del cliente y en
-              el conocimiento técnico para resolverlo.</p>
-
-          </div>
-          <div class="row">
-          <div style="padding:3%;" class="col-md-4 text-center">
-            <i class="fas fa-user-cog fa-5x"></i>
-            <h4>LA MEJOR ATENCIÓN</h4>
-            <p>Ofrecemos atención personalizada y el asesoramiento técnico necesario para que puedas tener las herramientas adecuadas acorde a tu proyecto</p>
-          </div>
-          <div style="padding:3%;" class="col-md-4 text-center">
-              <i class="fas fa-check-circle fa-5x"></i>
-              <h4>CALIDAD</h4>
-              <p>Todos nuestros productos son de alta calidad, corresponden a las mejores marcas nacionales e internacionales</p>
-          </div>
-          <div style="padding:3%;" class="col-md-4 text-center">
-            <i class="fas fa-tools fa-5x"></i>
-            <h4>VARIEDAD</h4>
-              <p>Contamos con una gran variedad de productos. No solo productos de ferretería, sino que también de sanitarios, bazar, pinturería, entre otros </p>
-          </div>
-        </div>
+  <br>
+  <div id="sobreNosotros" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Sobre Nosotros</h1>
+          <br>
+          <br>
+          <br>
+          <h5>Somos <b>Ferreteria Tardini Hnos.</b> una empresa que brinda sus servicios desde 1994 ofreciendo productos
+            de <b>ferreteria, pinturería, sanitarios, herrajes, bulonería, electricidad y bazar</b> . Brindamos
+            asesoramiento técnico de todos los productos que tenemos a la venta, ofreciendo siempre la mejor solución a
+            un bajo costo. Nuestro principal valor se apoya en el interés por el problema o necesidad del cliente y en
+            el conocimiento técnico para resolverlo.</h5>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="section2">
-
-  </div>
-
   <div id="productos" class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="text-center">
-          <h1>NUESTROS PRODUCTOS</h1>
-          <br>
-          <br>
-          <br>
-
+        <div class="jumbotron text-center">
+          <h1>Nuestros Productos</h1>
         </div>
       </div>
     </div>
@@ -475,26 +372,31 @@
   </div>
   <br />
   <div class="text-center">
-    <a id="mlLink" target="_blank" href="https://listado.mercadolibre.com.ar/_CustId_83739677">
+    <a target="_blank" href="https://listado.mercadolibre.com.ar/_CustId_83739677">
       <img alt="MercadoLibre" src="img/mercadolibre.jpg">
       <h5>Visita nuestros productos!</h5>
     </a>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
 
-  <div id="section3">
 
   </div>
- 
-  <div id="sectionUbicacion">
+  <br>
+  <!-- <div id="clientes" class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-      <h1>UBICACIÓN</h1>
-      <br>
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Nuestro Clientes</h1>
+        </div>
+      </div>
     </div>
+  </div> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="sectionUbicacion">
+    <div class="container jumbotron text-center">
+      <h1>Ubicación</h1>
+      <br>
     </div>
     <div class="col-md-12">
       <br>
@@ -563,22 +465,22 @@
 
 
     </div>
-  </div>
 
-  <div id="section4">
-
-  </div>
-   
-  <div style="background: #292929;" id="Contacto" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="Contacto" >
       <div class="row">
         <div class="col-md-12">
-          <div class="text-center">
+          <div class="jumbotron text-center">
             <h1 >Contacto</h1>
           </div>
         </div>
-      </div>    
+      </div>
+    </div>
 
-    <div style="background: #292929;" class="container">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6 pb-5">
 
@@ -635,10 +537,15 @@
         </div>
       </div>
     </div>
-  </div>
 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
-        <hr style="margin:0;border-color:white;">
       <div class="container">
         <br>
         <div class="row">
@@ -651,7 +558,7 @@
               <li>Agronomía, Capital Federal</li>
             </ul>
           </div>
-          <div class="col-md-4 text-center">
+          <div  class="col-md-4 text-center">
             <h4>Contacto</h4>
             <ul>
               <li><span class="fas fa-phone fa-rotate-90"></span>(011) 4573-1263</li>
@@ -662,7 +569,6 @@
         <br>
       </div>
     </footer>
-
 
 
 
